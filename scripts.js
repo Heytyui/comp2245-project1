@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         let email = emailInput.value.trim();
 
-        if (validateEmail(email)) {
+        if (email && email.includes('@')) {
             messageDiv.textContent = "Thank you! Your email address "+ email + " has been added to our mailing list!.";
             messageDiv.style.color = "green";
             emailInput.value = '';
